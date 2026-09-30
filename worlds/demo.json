@@ -1,0 +1,74 @@
+{
+  "title": "The Quiet Valley",
+  "start": "misty-valley-station",
+  "views": {
+    "misty-valley-station": {
+      "prompt": "A small abandoned railway station on a misty valley floor, snow-dusted platform, wooden shelter with a dark open doorway, tracks curving into the fog, pine hills beyond",
+      "image": "worlds/demo/misty-valley-station.png",
+      "spots": [
+        {
+          "label": "track-curves",
+          "x": 20.0,
+          "y": 60.0,
+          "hint": "Follows the rails into the fog toward the distant hills.",
+          "to": "frozen-tracks"
+        },
+        {
+          "label": "shed-door",
+          "x": 66.0,
+          "y": 47.0,
+          "hint": "An open doorway in the small wooden shelter to step inside.",
+          "to": "platform-shelter"
+        }
+      ],
+      "leads_to": [
+        "frozen-tracks",
+        "platform-shelter"
+      ]
+    },
+    "platform-shelter": {
+      "prompt": "Inside the wooden station shelter: a narrow room with a bench, an old stove, a window looking out at fog, a door at the back standing ajar",
+      "image": "worlds/demo/platform-shelter.png",
+      "spots": [
+        {
+          "label": "open door",
+          "x": 94,
+          "y": 61.0,
+          "hint": "step outside to the bright room beyond",
+          "to": "station-loft"
+        }
+      ],
+      "leads_to": [
+        "station-loft"
+      ]
+    },
+    "frozen-tracks": {
+      "prompt": "Following the railway tracks along the valley floor into freezing fog, snow between the sleepers, a stone culvert opening under the embankment",
+      "image": "worlds/demo/frozen-tracks.png",
+      "spots": [
+        {
+          "label": "station door",
+          "x": 71.0,
+          "y": 61.0,
+          "hint": "Enter the wooden hut beside the tracks",
+          "to": "culvert-mouth"
+        }
+      ],
+      "leads_to": [
+        "culvert-mouth"
+      ]
+    },
+    "station-loft": {
+      "prompt": "A dusty station loft under rafters, stacked crates, a small round window with pale light, wooden stairs leading down",
+      "image": "worlds/demo/station-loft.png",
+      "spots": [],
+      "leads_to": []
+    },
+    "culvert-mouth": {
+      "prompt": "The mouth of a stone culvert beneath a railway embankment, dark water running out, moss on the stones, faint light visible deep inside",
+      "image": "worlds/demo/culvert-mouth.png",
+      "spots": [],
+      "leads_to": []
+    }
+  }
+}
